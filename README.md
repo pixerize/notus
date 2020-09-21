@@ -1,4 +1,6 @@
 # notus
 Notus front-end test
 
-//postavio sam timeout funkciju za preloader na 2 sekunde, jer se stranice prebrzo load-aju
+// The project is made with pure JavaScript, without any dependencies.
+
+// I have set the timeout function for the preloader to 2 seconds because the pages are loading too fast
