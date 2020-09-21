@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel=icon href=assets/images/favicon.png>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59e96b2669.js" crossorigin="anonymous"></script>
+
+
+    <title>Notus Front-end test</title>
+</head>
+
+<body>
+
+    <!-- preloader pocinje ovdje -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="257.023" viewBox="0 0 200 257.023">
+             <g id="Group_28" data-name="Group 28" transform="translate(-564.29 -265.957)">
+              <path id="Path_36" data-name="Path 36" d="M714.291,265.957h-150v200h200v-150A50,50,0,0,0,714.291,265.957Zm34.21,184.21H580.079V281.746H714.291a34.249,34.249,0,0,1,34.21,34.211v134.21Z" transform="translate(0 0)" fill="#32485f"/>
+              <rect id="Rectangle_2" data-name="Rectangle 2" width="31.579" height="31.579" transform="translate(593.271 294.878)" fill="#32485f"/>
+              <rect id="Rectangle_3" data-name="Rectangle 3" width="31.579" height="31.579" transform="translate(593.271 368.551)" fill="#32485f"/>
+              <rect id="Rectangle_4" data-name="Rectangle 4" width="31.579" height="31.579" transform="translate(630.114 331.709)" fill="#32485f"/>
+              <rect id="Rectangle_5" data-name="Rectangle 5" width="31.579" height="31.579" transform="translate(666.922 294.878)" fill="#32485f"/>
+              <rect id="Rectangle_6" data-name="Rectangle 6" width="31.579" height="31.579" transform="translate(666.922 368.551)" fill="#32485f"/>
+              <rect id="Rectangle_7" data-name="Rectangle 7" width="31.579" height="31.579" transform="translate(703.764 331.709)" fill="#32485f"/>
+              <rect id="Rectangle_8" data-name="Rectangle 8" width="31.579" height="31.579" transform="translate(630.091 405.393)" fill="#32485f"/>
+              <rect id="Rectangle_9" data-name="Rectangle 9" width="31.579" height="31.579" transform="translate(703.764 405.393)" fill="#32485f"/>
+              <g id="Group_27" data-name="Group 27" transform="translate(564.29 485.593)">
+                <path id="Path_37" data-name="Path 37" d="M588.944,502.875l-16.743-22.7H564.29v36.141h7.694v-23.57l17.231,23.57h7.423V480.171h-7.694Z" transform="translate(-564.29 -479.576)" fill="#32485f"/>
+                <path id="Path_38" data-name="Path 38" d="M625.207,479.592c-10.945,0-18.911,7.8-18.911,18.693s7.966,18.694,18.911,18.694c10.892,0,18.856-7.8,18.856-18.694S636.1,479.592,625.207,479.592Zm0,30.56c-6.718,0-11-5.148-11-11.867,0-6.772,4.281-11.866,11-11.866,6.665,0,10.945,5.094,10.945,11.866C636.152,505,631.872,510.152,625.207,510.152Z" transform="translate(-563.11 -479.592)" fill="#32485f"/>
+                <path id="Path_39" data-name="Path 39" d="M650.148,486.945h10.566v29.368h7.749V486.945h10.511v-6.773H650.148Z" transform="translate(-561.878 -479.576)" fill="#32485f"/>
+                <path id="Path_40" data-name="Path 40" d="M713.016,501.628c0,5.04-2.872,8.507-8.454,8.507s-8.506-3.468-8.506-8.507V480.171h-7.8v21.674c0,8.94,5.31,15.117,16.309,15.117s16.31-6.177,16.31-15.117V480.171h-7.856Z" transform="translate(-560.808 -479.576)" fill="#32485f"/>
+                <path id="Path_41" data-name="Path 41" d="M738.888,490.048c0-2.168,1.843-3.577,5.093-3.577a15.519,15.519,0,0,1,10.512,3.956l4.281-5.744c-3.577-3.305-8.344-5.039-14.088-5.039-8.506,0-13.709,4.984-13.709,11,0,13.6,20.807,9.211,20.807,15.5,0,2.113-2.006,4.01-6.287,4.01a15.881,15.881,0,0,1-11.487-4.931l-4.225,6.014c3.412,3.413,8.4,5.743,15.388,5.743,9.7,0,14.467-4.984,14.467-11.595C759.641,491.891,738.888,495.738,738.888,490.048Z" transform="translate(-559.641 -479.59)" fill="#32485f"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- preloader kraj -->
+
+    <!-- glavni menu  -->
+
+    <div id="main-menu" class="overlay">
+        <div class="notus-menu">
+            <p>Exit</p>
+            <a href="javascript:void(0)"><img src="assets/images/notus-meni-close.svg" alt="notus menu close" onclick="closeNav()"></a>
+        </div>
+        <div class="overlay-content">
+            <img src="assets/images/Notus-logo-meni.svg" alt="" class="overlay-logo">
+            <div class="menu-items">
+                <a href="index.html">HOME</a>
+                <a href="task3.html">TASK 3</a>
+                <a href="task4.html">TASK 4</a>
+                <a href="task5.html">TASK 5</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-logo">
+        <a href="index.html"><img src="assets/images/Notus-logo-mobile.svg" alt="notus logo"></a>
+    </div>
+
+    <div class="notus-menu">
+        <p>Menu</p>
+        <a href="#"><img src="assets/images/notus-meni.svg" alt="notus meni" onclick="openNav()"></a>
+    </div>
+
+    <!-- glavni menu kraj -->
+
+    <!-- kontent -->
+    <div class="container notus-content">
+        <div class="row">
+            <div class="col-md-12 notus-header">
+                <h1>Fiksna galerija</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Lorem Ipsum Heading</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete.
+                    Ut aliquid scire se gaudeant? Illi enim inter se dissentiunt. Nec vero sum nescius esse
+                    utilitatem in historia, non modo voluptatem. Quamquam te quidem video minime esse
+                    deterritum. </p>
+            </div>  
+             <div class="col-md-12 notus-row">
+                 <div class="row">
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img1.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img2.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img3.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img3.jpg" alt="">
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row notus-pdtop-30">
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img2.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img3.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img1.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img1.jpg" alt="">
+                        </div>
+                    </div>
+                 </div> 
+                 </div>
+                 <div class="galerija-modal-box invisible">
+                    <div class="galerija-overlay"></div>
+                    <div class="galerija-modal-box--image">
+                        <img src="" alt="image here"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- kontent kraj -->
+
+<!-- footer  -->
+
+<div class="container-fluid notus-bg">
+    <div class="notus-footer">
+    <div class="row">
+        <div class="col-md-12 footer-logo">
+            <img src="assets/images/Notus-logo-footer.svg" alt="">
+        </div>
+        <div class="col-md-12 notus-socials ">
+                 <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                </ul>
+        </div>
+        <div class="col-md-12 notus-footer-links ">
+                <ul>
+                    <li>
+                        <a href="#"> Privacy Policy </a>
+                    </li>
+                    <li>
+                        <a href="#"> Terms and Conditions </a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer kraj -->
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript " src="assets/main.js "></script>
+    <script type="text/javascript " src="assets/galerija.js "></script>
+</body>
+
+</html>

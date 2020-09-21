@@ -1,0 +1,607 @@
+body {
+    background: #525F6D;
+    font: normal normal normal 16px/24px Montserrat;
+    color: #fff;
+}
+
+
+body a {
+    transition: .3s;   
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999999;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+#loader svg {
+    max-width: 100px;
+}
+
+#Rectangle_2, #Rectangle_5, #Rectangle_6, #Rectangle_7 {
+    fill: #42BEB3;
+    animation: colors 1s infinite;
+}
+
+#Rectangle_3, #Rectangle_4, #Rectangle_8, #Rectangle_9 {
+    fill: #F89C35;
+    animation: colors 2s infinite;
+}
+
+#Path_36, #Path_37, #Path_38, #Path_39, #Path_40, #Path_41 {
+    fill: #fff;
+}
+
+@keyframes colors {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes colors2 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #081B2F;
+    z-index: 1000;
+    -webkit-transform: translateX(0);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(0);
+    /* IE 9 */
+    transform: translateX(0);
+    /* Firefox 16+, IE 10+, Opera */
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loadirano */
+
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);
+    /* IE 9 */
+    transform: translateX(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);
+    /* IE 9 */
+    transform: translateX(100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateY(-100%);
+    /* IE 9 */
+    transform: translateY(-100%);
+    /* Firefox 16+, IE 10+, Opera */
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+/* main content */
+
+.mobile-logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    display: none;
+}
+
+.notus-row {
+    padding-top: 50px;
+}
+
+.notus-pdtop-30 {
+    padding-top: 30px;
+}
+
+.notus-shadow {
+    -webkit-box-shadow: 0 10px 26px -6px #313131;
+    -moz-box-shadow: 0 10px 26px -6px #313131;
+    box-shadow: 0 10px 26px -6px #313131;
+}
+
+.notus-content {
+    padding: 100px 15px 140px;
+}
+
+.notus-header h1:after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.notus-header {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.notus-main {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover !important;
+    -webkit-transition: background-image .5s ease-in-out;
+    transition: background-image .5s ease-in-out;
+    background-position: center !important;
+    position:relative;
+}
+
+.notus-overlay {
+    background: rgb(8 27 47 / 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.notus-menu {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 998;
+}
+
+.notus-menu p {
+    font: normal normal normal 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.notus-logo {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    width: 100%;
+    text-align: center;
+}
+
+.main-title h1 {
+    font: normal normal bold 60px/73px Montserrat;
+    color: #fff;
+}
+
+.navigation {
+    color: #fff;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.left img {
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+.left img, .right img {
+    padding: 16px;
+    transition: .3s;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.left img:hover, .right img:hover {
+    opacity: 1;
+}
+
+
+.prikazi-slide {
+    display: none;
+    max-width: 320px;
+    margin: auto;
+}
+
+.prikazi-slide img {
+    width: 100%;
+}
+
+.slidercontainer {
+    max-width: 650px;
+    position: relative;
+    margin: auto;
+}
+
+.lijevo,
+.desno {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px 15px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.desno {
+    right: 0;
+}
+
+.lijevo:hover,
+.desno:hover {
+    background-color: rgb(247 157 54);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Fading animation */
+
+.fading {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* main menu */
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #F89D36;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.menu-items a:hover, .menu-items a:focus {
+    transform: translateX(10px);
+}
+
+.menu-items a {
+    font: normal normal bold 60px/73px Montserrat;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    transition: .3s;
+}
+
+.menu-items {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 250px;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 133.5px;
+    left: 100px;
+}
+
+img.overlay-logo {
+    padding-top: 100px;
+}
+
+.main-btn {
+    font-size: 15px;
+    font-weight: 600;
+    border: 3px solid #F89D36;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: transparent;
+    transition: .3s;
+    outline: unset !important;
+}
+
+.main-btn:hover {
+    background: #F89D36;
+    color: #fff;
+}
+
+/* fiksna galerija */
+
+.galerija-image-box {
+    display: none;
+}
+
+.notus-img-box {
+    height: 260px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.notus-img-box:hover {
+    cursor: zoom-in;
+  }
+
+  .galerija-modal-box {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(3, 3, 3, 0.9);
+    transition: all .33s ease-out;  
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .galerija-modal-box .galerija-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: zoom-out;
+    z-index: 1;
+  }
+  .galerija-modal-box--image {
+    position: absolute;
+    height: 600px;
+    max-height: 90%;
+    max-width: 90%;
+    padding: 0px;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .galerija-modal-box--image img {
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .galerija-modal-box.invisible {
+    opacity: 0;
+    transform: translateX(-120%);
+  }
+  
+
+/* footer */
+
+.notus-bg {
+    background: #434e59;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.notus-bg:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30%;
+    background-color: #434e59;
+    clip-path: polygon(0 100%, 100% 0%, 100% 110%);
+    -webkit-clip-path: polygon(0 100%, 100% 0%, 100% 110%);
+    top: -67px;
+    left: 0;
+}
+
+.footer-logo {
+    margin-bottom: 35px;
+}
+
+.notus-socials li, .notus-footer-links li {
+    display: inline-block;
+}
+
+.notus-footer-links li {
+    padding: 15px 0 0;
+}
+
+.notus-footer a {
+    color: #fff;
+    font-size: 25px;
+}
+
+.notus-socials a {
+    padding: 0 20px;
+}
+
+.notus-socials a:hover, .notus-footer-links a:hover {
+    color: #f89d36;
+}
+
+.notus-footer-links a {
+    color: #fff;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .notus-content {
+        padding: 100px 130px 140px;
+    }
+
+    .main-title h1, .menu-items a  {
+        font: normal normal bold 50px/65px Montserrat;
+    }
+
+    .menu-items {
+        top: 55%;
+    }
+
+}
+   
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    .notus-content {
+        padding: 140px 15px 140px;
+    }
+
+    .notus-content h1{
+        position: relative;;
+    }
+
+    .mobile-logo {
+        display: block;
+    }
+
+    .notus-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        left: unset;
+    }
+
+    .overlay .notus-menu {
+        right: 48px;
+    }
+
+    .notus-logo {
+        padding-top: 40px;
+    }
+
+    .notus-logo img {
+        width: 100px;
+    }
+
+    img.overlay-logo {
+        width: 100px;
+        padding-top: 40px;
+    }
+
+     .main-title h1 {
+        font: normal normal bold 32px/40px Montserrat;
+    } 
+        
+    .menu-items {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .menu-items a {
+        font: normal normal bold 45px/53px Montserrat;
+    }
+
+    .notus-pdtop-30 {
+        padding-top: 0px;
+    }
+
+    .notus-img-box {
+        margin-top: 20px;
+    }
+
+    .notus-right-text {
+        padding-top: 30px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 398px) {   
+    .notus-bg:before {
+    top: -78px;
+}
+
+     .galerija-modal-box--image img {
+        max-width: 350px;
+    }
+}
+
+
