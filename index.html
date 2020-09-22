@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59e96b2669.js" crossorigin="anonymous"></script>
 
     <title>Notus Front-end test</title>
 </head>
@@ -48,40 +49,185 @@
 
     <!-- glavni menu  -->
 
-    <div id="main-menu" class="overlay">
         <div class="notus-menu">
-            <p>Exit</p>
-            <a href="javascript:void(0)"><img src="assets/images/notus-meni-close.svg" alt="notus menu close" onclick="closeNav()"></a>
-        </div>
-        <div class="overlay-content">
-            <img src="assets/images/Notus-logo-meni.svg" alt="" class="overlay-logo">
-            <div class="menu-items">
-                <a href="task3.html">TASK 3</a>
-                <a href="task4.html">TASK 4</a>
-                <a href="task5.html">TASK 5</a>
+            <div class="notus-open">
+                <p>Menu</p>
+                <a href="javascript:void(0)"><img src="assets/images/notus-meni.svg" alt="notus meni" onclick="openNav()"></a>
             </div>
         </div>
-    </div>
 
-    <div class="notus-menu">
-        <p>Menu</p>
-        <a href="#"><img src="assets/images/notus-meni.svg" alt="notus meni" onclick="openNav()"></a>
-    </div>
+        <div id="main-menu" class="overlay">
+            <div class="notus-menu">
+                <p>Exit</p>
+                <a href="javascript:void(0)"><img src="assets/images/notus-meni-close.svg" alt="notus menu close" onclick="closeNav()"></a>
+            </div>
+            <div class="overlay-content">
+                <img src="assets/images/Notus-logo-meni.svg" alt="" class="overlay-logo">
+                <div class="menu-items">
+                    <a href="#task3">TASK 3</a>
+                    <a href="#task4">TASK 4</a>
+                    <a href="#task5">TASK 5</a>
+                </div>
+            </div>
+        </div>
 
     <!-- glavni menu kraj -->
 
     <!-- kontent -->
 
-    <div class="notus-main" style="background: url(assets/images/notus-task1-img1.jpg);">
-        <div class="notus-overlay">
-            <div class="notus-logo">
-                <img src="assets/images/Notus-logo-main.svg " alt="notus logo ">
+        <div class="notus-main" style="background: url(assets/images/notus-task1-img1.jpg);">
+            <div class="notus-overlay">
+                <div class="notus-logo">
+                    <img src="assets/images/Notus-logo-main.svg " alt="notus logo ">
+                </div>
+                <div class="main-title">
+                    <h1>Front-end test</h1>
+                </div>
             </div>
-            <div class="main-title">
-                <h1>Front-end test</h1>
+        </div>
+
+        <div class="container notus-content">
+            <div class="row">
+                <div id="task3" class="col-md-12 notus-header notus-pdtop-50">
+                    <h1>Fiksna galerija</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Lorem Ipsum Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete.
+                        Ut aliquid scire se gaudeant? Illi enim inter se dissentiunt. Nec vero sum nescius esse
+                        utilitatem in historia, non modo voluptatem. Quamquam te quidem video minime esse
+                        deterritum. </p>
+                </div>  
+            <div class="col-md-12 notus-row">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img1.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img1.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img2.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img2.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img3.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img3.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row notus-pdtop-30">
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img2.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img2.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img3.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img3.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notus-img-box" style="background: url(assets/images/notus-task2-img1.jpg);">
+                            <img class="notus-shadow galerija-image-box" src="assets/images/notus-task2-img1.jpg" alt="notus task img">
+                        </div>
+                    </div>
+                 </div> 
+             </div>
+             <div class="galerija-modal-box invisible">
+                <div class="galerija-overlay"></div>
+                <div class="galerija-modal-box--image">
+                    <img src="" alt="image here"/>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div id="task4" class="col-md-12 notus-header">
+                    <h1>Slider galerija</h1>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Lorem Ipsum Heading</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duo Reges: constructio interrete.
+                        Ut aliquid scire se gaudeant? Illi enim inter se dissentiunt. Nec vero sum nescius esse
+                        utilitatem in historia, non modo voluptatem. Quamquam te quidem video minime esse
+                        deterritum.</p>
+                    <div class="slidercontainer notus-row">
+                        <div class="prikazi-slide fading">
+                            <img src="assets/images/notus-task3-img1.jpg" />
+                        </div>
+                        <div class="prikazi-slide fading">
+                            <img src="assets/images/notus-task3-img2.jpg" />
+                        </div>
+                
+                        <div class="prikazi-slide fading">
+                            <img src="assets/images/notus-task3-img3.jpg" />
+                        </div>
+                        <!-- Navigation arrows -->
+                        <a class="lijevo" onclick="nextSlide(-1)">❮</a>
+                        <a class="desno" onclick="nextSlide(1)">❯</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div id="task5" class="col-md-12 notus-header">
+                    <h1>Mapa, button, footer</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"> <iframe class="notus-shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.1860718780445!2d16.026615690589985!3d45.78749983268592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476679e4631b5479%3A0xf397a6cfa8839863!2sNotus!5e0!3m2!1sen!2sba!4v1600546306383!5m2!1sen!2sba"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                <div class="col-md-6 notus-right-text">
+                    <h2>Lorem Ipsum Heading</h2>
+                    <p>Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Idem adhuc; Idemque diviserunt naturam hominis in animum et corpus. Istam voluptatem, inquit, Epicurus ignorat? Duo enim genera quae erant, fecit tria.</p>
+                    <p> Ut proverbia non nulla veriora sint quam vestra dogmata An haec ab eo non dicuntur? Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quoniam, si dis placet, ab Epicuro loqui discimus. Quid sequatur, quid repugnet,
+                        vident. </p>
+                    <button class="main-btn" onclick="klikniMe()">Ne klikaj me!</button>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-12 notus-row">
+                    <h2>Lorem Ipsum Heading 2</h2>
+                    <p>Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Idem adhuc; Idemque diviserunt naturam hominis in animum et corpus. Istam voluptatem, inquit, Epicurus ignorat? Duo enim genera quae erant, fecit tria.</p>
+                    <p> Ut proverbia non nulla veriora sint quam vestra dogmata An haec ab eo non dicuntur? Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quoniam, si dis placet, ab Epicuro loqui discimus. Quid sequatur, quid repugnet,
+                        vident. </p>
+                </div>
+            </div>                
+        </div>
+    
+        <!-- kontent kraj -->
+    
+    <!-- footer  -->
+    
+    <div class="container-fluid notus-bg">
+        <div class="row notus-footer">
+            <div class="col-md-12 footer-logo">
+                <img src="assets/images/Notus-logo-footer.svg" alt="">
+            </div>
+            <div class="col-md-12 notus-socials ">
+                     <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    </ul>
+            </div>
+            <div class="col-md-12 notus-footer-links ">
+                    <ul>
+                        <li>
+                            <a href="#"> Privacy Policy </a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms and Conditions </a>
+                        </li>
+                    </ul>
             </div>
         </div>
     </div>
+    
+    <!-- footer kraj -->
 
     <!-- Navigacija -->
     <div class="navigation">
@@ -93,7 +239,6 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript " src="assets/main.js "></script>
-    <script type="text/javascript " src="assets/slider-pozadina.js "></script>
 
 </body>
 

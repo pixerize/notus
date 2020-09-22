@@ -1,9 +1,15 @@
+:root {
+    --loader-bg: #081B2F;
+    --body-bg: #525F6D;
+  }
+
+
 body {
-    background: #525F6D;
+    background: var(--body-bg);
     font: normal normal normal 16px/24px Montserrat;
     color: #fff;
+    overflow-x: hidden;
 }
-
 
 body a {
     transition: .3s;   
@@ -82,7 +88,7 @@ ul {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #081B2F;
+    background: var(--loader-bg);
     z-index: 1000;
     -webkit-transform: translateX(0);
     /* Chrome, Opera 15+, Safari 3.1+ */
@@ -144,13 +150,6 @@ ul {
 
 /* main content */
 
-.mobile-logo {
-    position: absolute;
-    left: 40px;
-    top: 40px;
-    display: none;
-}
-
 .notus-row {
     padding-top: 50px;
 }
@@ -166,7 +165,7 @@ ul {
 }
 
 .notus-content {
-    padding: 100px 15px 140px;
+    padding-bottom: 140px;
 }
 
 .notus-header h1:after {
@@ -180,6 +179,7 @@ ul {
 
 .notus-header {
     margin-bottom: 40px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -331,6 +331,10 @@ ul {
 }
 
 /* main menu */
+
+.notus-open {
+    position: fixed;
+}
 
 .overlay {
     height: 0;
@@ -510,7 +514,7 @@ img.overlay-logo {
 
 @media screen and (max-width: 1440px) {
     .notus-content {
-        padding: 100px 130px 140px;
+        padding: 0px 130px 140px;
     }
 
     .main-title h1, .menu-items a  {
@@ -527,26 +531,28 @@ img.overlay-logo {
 @media (max-width: 767.98px) {
 
     .notus-content {
-        padding: 140px 15px 140px;
+        padding: 0 15px 140px;
     }
 
     .notus-content h1{
         position: relative;;
     }
 
-    .mobile-logo {
-        display: block;
+    .notus-menu, .notus-open{
+        top: 30px;
+        right: 30px;
+        left: unset;
+        padding: 10px;
     }
 
-    .notus-menu {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-        left: unset;
+    .notus-open {
+        position: fixed;
+        background: rgb(0 0 0 / 0.7);
+        border-radius: 0 10px 0 0;
     }
 
     .overlay .notus-menu {
-        right: 48px;
+        right: 38px;
     }
 
     .notus-logo {
